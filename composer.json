@@ -1,5 +1,5 @@
 {
-    "name":"codeception/module-phalcon4",
+    "name":"kiksaus/module-phalcon4",
     "description":"Codeception module for Phalcon 4 framework",
     "keywords":["codeception", "phalcon", "phalcon4"],
     "homepage":"https://codeception.com/",
