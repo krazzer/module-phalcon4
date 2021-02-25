@@ -15,4 +15,28 @@ class SessionManager extends Manager
     {
         return true;
     }
+
+    /**
+     * @return void
+     */
+    public function destroy(): void
+    {
+        $this->getAdapter()->destroy($this->getId());
+    }
+
+    /**
+     * @inheritdoc
+     */
+    public function get(string $key, $defaultValue = null, bool $remove = false)
+    {
+        return $this->getAdapter()->get($key, $defaultValue, $remove);
+    }
+
+    /**
+     * @inheritdoc
+     */
+    public function set(string $key, $value): void
+    {
+        $this->getAdapter()->set($key, $value);
+    }
 }
